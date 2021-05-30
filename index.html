@@ -1,54 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Diglett!</title>
+    <title>Diglett</title>
     <style>
-      @font-face {
-        font-family: "Chrono";
-        font-style: normal;
-        font-weight: normal;
-        src: local("Chrono Regular"),
-          url("http://panic.com/fonts/ChronoWeb_EOT/ChronoWebMedium.eot")
-            format("embedded-opentype"),
-          url("http://panic.com/fonts/ChronoWeb_WOFF/ChronoWebRegular.woff")
-            format("woff");
-      }
-
-      @font-face {
-        font-family: "Chrono";
-        font-style: normal;
-        font-weight: 600;
-        src: local("Chrono Medium"),
-          url("http://panic.com/fonts/ChronoWeb_EOT/ChronoWebMedium.eot")
-            format("embedded-opentype"),
-          url("http://panic.com/fonts/ChronoWeb_WOFF/ChronoWebMedium.woff")
-            format("woff");
-      }
-
-      @font-face {
-        font-family: "Chrono";
-        font-style: italic;
-        font-weight: 800;
-        src: local("Chrono Black Italic"),
-          url("http://panic.com/fonts/ChronoWeb_EOT/ChronoWebBlackItalic.eot")
-            format("embedded-opentype"),
-          url("http://panic.com/fonts/ChronoWeb_WOFF/ChronoWebBlackItalic.woff")
-            format("woff");
-      }
-
       * {
         margin: 0;
         padding: 0;
       }
-
       html {
         background: #990f0b;
       }
-
       body {
-        font-family: "Chrono", sans-serif;
-        font-size: 16px;
-        line-height: 20px;
+        font-family: sans-serif;
         background: #852500;
         color: #333338;
         display: flex;
@@ -58,25 +21,7 @@
         min-width: 100vw;
         min-height: 100vh;
       }
-
-      p {
-        text-align: left;
-      }
-
-      h1 {
-        padding: 0;
-        color: white;
-        font-family: "Chrono", "Avenir Next", "Avenir", sans-serif;
-        font-weight: 800;
-        font-style: italic;
-        text-transform: uppercase;
-        font-size: 14vw;
-        line-height: 13vw;
-        letter-spacing: -0.6vw;
-        margin: 0;
-        white-space: nowrap;
-      }
-      img {
+      img.diglett {
         image-rendering: -webkit-optimize-contrast;
         image-rendering: -moz-crisp-edges;
         image-rendering: pixelated;
@@ -87,8 +32,13 @@
   </head>
   <body>
     <img
-      src="https://archives.bulbagarden.net/media/upload/1/13/Spr_2c_050.png"
+      src="https://app.piratepx.com/ship?p=050fbdda-c246-4f2f-bffc-112f75f28658&i=diglett.pascalpixel.com%2F"
+    />
+    <img
+      class="diglett"
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAACGFjVEwAAAALAAAAAP6d8QEAAAAPUExURQAAAI5NGQAAALknGff396sFeZUAAAABdFJOUwBA5thmAAAAGmZjVEwAAAAAAAAAOAAAADgAAAAAAAAAAAAKAGQAAD62gZYAAAC2SURBVEjH7dDBisMwDABRacb//82LREhLadLosiePsPHlYePY7Xa73X8llXO2qswhZXVZMXNNGUrXgpULciYpmCun0KTKhp0PIZlqq9GV5Fotx9BMnUMTnTwViIpMqnwIUTzgRxIB1xD5Aq0JvJcRfnEYIHIlCeGAcDqBgLiWAUozFF7OttdOpQCqSDk4zvz4WCp7QF7Oa2ib0/muNO6k+q7OJeVu83AGYhWlHmSNEb3Zs9t99gegGQQAJfppzAAAABpmY1RMAAAAAQAAACUAAAAIAAAACgAAACAACABkAgAo7zFcAAAAVmZkQVQAAAACSMdlzUEOACEIQ1H76/3PPGGwLLRuiH2BtRawKmhv2UZJ/aesogfJt8Kckl9ZOChqyuFIVHSpRjmN7ph0yaNcLzsS8yJamTEcBYMM0Ms+3FsBYMaRmZIAAAAaZmNUTAAAAAMAAAAXAAAAFQAAABAAAAATABAAZAAAixPZWAAAAG9mZEFUAAAABEjHjcxBDsMwDANBk5v/v7myWhAVYiDhwYehxfULuMKawdeONJvS5h0P7sZdkJESX6pnHmA3fT0HqJb/3VkXtE2XIJ4h5PB02c1zKPTs4uycD1D85X8oh8lk6F5sx+L2n2WbLuww9gdZYQJisS9ZjAAAABpmY1RMAAAABQAAAAoAAAAIAAAAEAAAABgAEgBkAgCwLYhMAAAANmZkQVQAAAAGSMc1zMkJADAQAkCv/muOssSHDD4EoERiCJhaOLZpqxSTzB29dZTcHKkTy//wABvPAKahLNjSAAAAGmZjVEwAAAAHAAAAAQAAAAEAAAAAAAAAAAAQAGQAADMP8GYAAAARZmRBVAAAAAhIxwECAP3/AAAAAgABB97p7wAAABpmY1RMAAAACQAAAAoAAAAIAAAAEAAAABgAEgBkAACC/gh7AAAANmZkQVQAAAAKSMc1zMkJADAQAkCv/muOssSHDD4EoERiCJhaOLZpqxSTzB29dZTcHKkTy//wABvPAKbYd5nBAAAAGmZjVEwAAAALAAAAFwAAABUAAAAQAAAAEwAKAGQAAKH6FV0AAABfZmRBVAAAAAxIx8XNQQ7AIAwDQbzO/99cokZUAe5dbmNFjP8zmQ+NTOoLUTyjMen0wVMIBagNpCu0uUWm5fLrSLYLvwMUUUN3Sz7dwsXNUf17+J5v7nxj+MJ4QDksNjxuZwHuGc3f+wAAABpmY1RMAAAADQAAAAcAAAAEAAAAGAAAABsAEABkAgFEpmqfAAAAImZkQVQAAAAOSMc9xzEOAAAIg0Aw/f+btYu3ECAciY39N7ABhAATeFX6dgAAABpmY1RMAAAADwAAAAEAAAABAAAAAAAAAAAACgBkAAAZ5jxjAAAAEWZkQVQAAAAQSMcBAgD9/wAAAAIAAVI1y7UAAAAaZmNUTAAAABEAAAAHAAAABAAAABgAAAAbABAAZAIBRTEOZgAAACJmZEFUAAAAEkjHPccxDgAACINAMP3/m7WLtxAgHImN/TewAYQAE9qLkqoAAAAaZmNUTAAAABMAAAABAAAAAQAAAAAAAAAAAJYAZAAADIeSiwAAABFmZEFUAAAAFEjHAQIA/f8AAAACAAFLmUSuAAAAG3RFWHRTb2Z0d2FyZQBBUE5HIEFzc2VtYmxlciAyLjkmW/6PAAAAAElFTkSuQmCC"
       alt="Diglett"
     />
+    <div />
   </body>
 </html>
